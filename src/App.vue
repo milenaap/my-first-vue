@@ -37,9 +37,6 @@ import {ref,computed} from 'vue'
 
 
 
-
-
-
 /*******************************************************************************
  * aqui van las variables y constantes (const,let)
  *******************************************************************************/
@@ -48,12 +45,6 @@ const counter = ref(0);
 const arrayFavoritos = ref([])
 
 const name ='vue dinamico'
-
-
-
-
-
-
 
 
 
@@ -87,9 +78,7 @@ const bloquearBtnAdd = computed(() => {
   return numSearch || numSearch === 0
 })
 
-   
-
-const classCounter = computed (() => {
+  const classCounter = computed (() => {
     if(counter.value === 0){
       return 'zero'
     }
@@ -99,17 +88,10 @@ const classCounter = computed (() => {
     if(counter.value < 0){
       return 'negative'
     }
-})
-
-   
-
+});
 
 
 </script>
-
-
-
-
 
 <template>
   <div class="container text-center mt-3">
@@ -135,11 +117,7 @@ const classCounter = computed (() => {
     </ul>
 
   </div>
-  
-
-
-
-
+ 
 </template>
 
 
